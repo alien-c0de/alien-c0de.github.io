@@ -17,19 +17,19 @@
     /* ===================== RESET & BASE ===================== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --green:      #00ff41;
-      --green-dim:  #00cc33;
-      --green-glow: rgba(0,255,65,0.25);
-      --cyan:       #00e5ff;
+      --green:      #00d4ff;
+      --green-dim:  #0099cc;
+      --green-glow: rgba(0,212,255,0.25);
+      --cyan:       #ff9f1c;
       --red:        #ff3c3c;
-      --bg-deep:    #020c07;
-      --bg-dark:    #040f0a;
-      --bg-card:    #0a1f12;
-      --bg-card2:   #0d2016;
-      --border:     #1a4a24;
-      --text:       #c8ffd4;
-      --text-dim:   #6bb87a;
-      --text-muted: #3d7a4a;
+      --bg-deep:    #05080f;
+      --bg-dark:    #080c18;
+      --bg-card:    #0d1424;
+      --bg-card2:   #101c32;
+      --border:     #162238;
+      --text:       #c5d5ef;
+      --text-dim:   #6278a0;
+      --text-muted: #2e4060;
       --font-mono:  'Fira Code', 'Share Tech Mono', monospace;
       --font-head:  'Rajdhani', sans-serif;
     }
@@ -73,7 +73,7 @@
       font-weight: 700; color: var(--green);
       text-shadow: 0 0 20px var(--green-glow);
     }
-    .section-title span { color: var(--text); }
+    .section-title span { color: var(--cyan); }
     .divider {
       width: 60px; height: 3px;
       background: linear-gradient(90deg, var(--green), transparent);
@@ -89,7 +89,7 @@
       border-bottom: 1px solid var(--border);
       transition: box-shadow .3s;
     }
-    nav.scrolled { box-shadow: 0 2px 20px rgba(0,255,65,.12); }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,212,255,.12); }
     .nav-inner {
       display: flex; align-items: center; justify-content: space-between;
       max-width: 1100px; margin: 0 auto; padding: 0 1.5rem;
@@ -106,7 +106,7 @@
     }
     .nav-links a {
       font-size: .82rem; letter-spacing: .08em;
-      color: var(--text-dim); text-transform: uppercase;
+      color: #d4861a; text-transform: uppercase;
       position: relative; padding-bottom: 2px;
     }
     .nav-links a::after {
@@ -146,7 +146,7 @@
       border: 1px solid var(--border);
       border-radius: 2px;
       margin-bottom: 1.5rem;
-      background: rgba(0,255,65,.05);
+      background: rgba(0,212,255,.05);
     }
     .hero-tag::before { content: '$ '; color: var(--green-dim); }
     .hero-name {
@@ -154,7 +154,7 @@
       font-size: clamp(2.8rem, 7vw, 5.5rem);
       font-weight: 700; line-height: 1;
       color: var(--green);
-      text-shadow: 0 0 40px rgba(0,255,65,.4);
+      text-shadow: 0 0 40px rgba(0,212,255,.4);
       margin-bottom: .3rem;
     }
     .hero-alias {
@@ -187,9 +187,9 @@
     .badge {
       font-size: .72rem; letter-spacing: .08em;
       color: var(--green); padding: .3rem .7rem;
-      border: 1px solid rgba(0,255,65,.3);
+      border: 1px solid rgba(0,212,255,.3);
       border-radius: 2px;
-      background: rgba(0,255,65,.05);
+      background: rgba(0,212,255,.05);
     }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn {
@@ -254,7 +254,7 @@
     .t-val { color: var(--text); }
 
     /* ===================== ABOUT ===================== */
-    #about { background: rgba(0,255,65,.015); }
+    #about { background: rgba(0,212,255,.015); }
     .about-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
       align-items: start;
@@ -293,7 +293,7 @@
       box-shadow: 0 0 10px var(--green-glow);
       transform: translateY(-2px);
     }
-    .skill-tag.primary { border-color: rgba(0,255,65,.35); color: var(--green); }
+    .skill-tag.primary { border-color: rgba(0,212,255,.35); color: var(--green); }
 
     /* skill bars */
     .skill-bars { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
@@ -340,12 +340,12 @@
     }
     .tl-card:hover {
       border-color: var(--green-dim);
-      box-shadow: 0 0 20px rgba(0,255,65,.08);
+      box-shadow: 0 0 20px rgba(0,212,255,.08);
     }
     .tl-header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; margin-bottom: .5rem; }
     .tl-role {
       font-family: var(--font-head); font-size: 1.05rem;
-      font-weight: 600; color: var(--green);
+      font-weight: 600; color: var(--cyan);
     }
     .tl-date {
       font-size: .75rem; color: var(--text-muted);
@@ -366,8 +366,8 @@
     .tl-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1rem; }
     .tl-tag {
       font-size: .7rem; color: var(--green-dim);
-      padding: .18rem .5rem; border: 1px solid rgba(0,255,65,.2);
-      border-radius: 2px; background: rgba(0,255,65,.04);
+      padding: .18rem .5rem; border: 1px solid rgba(0,212,255,.2);
+      border-radius: 2px; background: rgba(0,212,255,.04);
     }
 
     /* ===================== PROJECTS ===================== */
@@ -393,7 +393,7 @@
     .project-card:hover {
       transform: translateY(-4px);
       border-color: var(--green-dim);
-      box-shadow: 0 8px 30px rgba(0,255,65,.12);
+      box-shadow: 0 8px 30px rgba(0,212,255,.12);
     }
     .project-card:hover::before { opacity: 1; }
     .project-icon { font-size: 1.8rem; margin-bottom: 1rem; }
@@ -416,7 +416,7 @@
       border-radius: 3px; transition: all .2s;
     }
     .proj-link:hover { color: var(--green); border-color: var(--green-dim); }
-    .project-card.featured { border-color: rgba(0,255,65,.3); }
+    .project-card.featured { border-color: rgba(0,212,255,.3); }
 
     /* ===================== EDUCATION ===================== */
     #education {}
@@ -427,13 +427,13 @@
       border-radius: 6px; padding: 1.4rem;
       transition: all .3s;
     }
-    .edu-card:hover { border-color: var(--green-dim); box-shadow: 0 0 20px rgba(0,255,65,.08); }
+    .edu-card:hover { border-color: var(--green-dim); box-shadow: 0 0 20px rgba(0,212,255,.08); }
     .edu-icon { font-size: 1.5rem; color: var(--green); margin-bottom: .8rem; }
     .edu-degree {
       font-family: var(--font-head); font-size: 1rem;
       font-weight: 600; color: var(--text); margin-bottom: .3rem;
     }
-    .edu-school { font-size: .83rem; color: var(--green-dim); margin-bottom: .2rem; }
+    .edu-school { font-size: .83rem; color: var(--cyan); margin-bottom: .2rem; }
     .edu-year { font-size: .75rem; color: var(--text-muted); }
 
     /* certs */
@@ -450,7 +450,7 @@
     .cert-card i { color: var(--green); font-size: 1.1rem; }
 
     /* ===================== CONTACT ===================== */
-    #contact { background: rgba(0,255,65,.015); text-align: center; }
+    #contact { background: rgba(0,212,255,.015); text-align: center; }
     .contact-tagline {
       font-size: .9rem; color: var(--text-dim); max-width: 500px;
       margin: 0 auto 2.5rem;
@@ -468,19 +468,19 @@
     }
     .contact-card:hover {
       border-color: var(--green-dim); color: var(--green);
-      transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,255,65,.12);
+      transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,212,255,.12);
     }
     .contact-card i { font-size: 1.6rem; color: var(--green); }
     .contact-card span { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
     .status-badge {
       display: inline-flex; align-items: center; gap: .6rem;
       padding: .6rem 1.4rem; font-size: .82rem;
-      border: 1px solid rgba(0,255,65,.3);
+      border: 1px solid rgba(0,212,255,.3);
       border-radius: 3px; color: var(--green);
-      background: rgba(0,255,65,.06);
+      background: rgba(0,212,255,.06);
     }
     .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
-    @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(0,255,65,.4)} 50%{box-shadow:0 0 0 6px rgba(0,255,65,0)} }
+    @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(0,212,255,.4)} 50%{box-shadow:0 0 0 6px rgba(0,212,255,0)} }
 
     /* ===================== FOOTER ===================== */
     footer {
@@ -498,7 +498,7 @@
     /* ===================== SCAN LINE ===================== */
     body::after {
       content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,65,.012) 2px, rgba(0,255,65,.012) 4px);
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,212,255,.012) 2px, rgba(0,212,255,.012) 4px);
       pointer-events: none; z-index: 1;
     }
 
@@ -508,13 +508,13 @@
       animation: glitch-on 8s infinite;
     }
     @keyframes glitch-on {
-      0%,88%,100% { text-shadow: 0 0 40px rgba(0,255,65,.4); opacity: 1; transform: none; }
+      0%,88%,100% { text-shadow: 0 0 40px rgba(0,212,255,.4); opacity: 1; transform: none; }
       89%  { opacity: 0; }
       90%  { opacity: 1; text-shadow: -4px 0 var(--cyan), 4px 0 var(--red); transform: translateX(-3px); }
       91%  { opacity: 0; }
       92%  { opacity: 1; text-shadow: 4px 0 var(--cyan), -4px 0 var(--red); transform: translateX(3px); }
       93%  { opacity: 0; }
-      94%  { opacity: 1; text-shadow: 0 0 40px rgba(0,255,65,.4); transform: none; }
+      94%  { opacity: 1; text-shadow: 0 0 40px rgba(0,212,255,.4); transform: none; }
     }
   </style>
 </head>
@@ -546,7 +546,7 @@
   <div class="container">
     <div class="hero-content">
       <div class="hero-tag">whoami</div>
-      <h1 class="hero-name glitch">SANTOSH<br>SUSVEERKAR</h1>
+      <h1 class="hero-name">SANTOSH<br>SUSVEERKAR</h1>
       <p class="hero-alias">a.k.a. <span>Alien-C0de</span></p>
       <div class="hero-title"><span id="typed-text"></span><span class="cursor"></span></div>
       <p class="hero-desc">
@@ -601,7 +601,7 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          I'm a <strong>Cyber Security professional</strong> based in Pune, India, specialising in
+          I'm a <strong>Cyber Security professional</strong> specialising in
           adversary-style application testing and offensive security engineering. My work spans
           vulnerability discovery, exploit validation, attack surface analysis and identification
           of authentication, authorization, injection, and business-logic flaws across complex
@@ -619,11 +619,6 @@
           controls and reduce production risk across large-scale environments.
         </p>
         <div class="info-list">
-          <div class="info-item">
-            <i class="fa-solid fa-location-dot info-icon"></i>
-            <span class="info-label">Location</span>
-            <span class="info-val">Pune, Maharashtra, India</span>
-          </div>
           <div class="info-item">
             <i class="fa-solid fa-envelope info-icon"></i>
             <span class="info-label">Email</span>
@@ -659,8 +654,6 @@
             <div class="t-line"><span class="t-key">name</span>      <span class="t-val">= "Santosh Susveerkar"</span></div>
             <div class="t-line"><span class="t-key">alias</span>     <span class="t-val">= "Alien-C0de"</span></div>
             <div class="t-line"><span class="t-key">role</span>      <span class="t-val">= "AppSec Specialist"</span></div>
-            <div class="t-line"><span class="t-key">company</span>   <span class="t-val">= "Atos"</span></div>
-            <div class="t-line"><span class="t-key">location</span>  <span class="t-val">= "Pune, India"</span></div>
             <div class="t-line"><span class="t-key">exp_yr</span>    <span class="t-val">= 20  <span style="color:var(--text-muted)"># years in IT</span></span></div>
             <div class="t-line">&nbsp;</div>
             <div class="t-line"><span class="t-key">focus</span> <span class="t-val">= [</span></div>
@@ -811,7 +804,6 @@
             <div class="tl-role">Application Security Specialist / Business Security Officer</div>
             <div class="tl-date">2022 – Present</div>
           </div>
-          <div class="tl-company"><i class="fa-solid fa-building"></i>&nbsp; Atos &nbsp;|&nbsp; Pune, India</div>
           <div class="tl-desc">Lead application security assessments for internal enterprise systems and large-scale
             customer-facing web applications across UAT and production environments. Embed security into SDLC through
             structured scoping, assessment execution, vulnerability validation and remediation verification.</div>
@@ -838,7 +830,6 @@
             <div class="tl-role">Solution Architect</div>
             <div class="tl-date">Oct 2016 – Sep 2022</div>
           </div>
-          <div class="tl-company"><i class="fa-solid fa-building"></i>&nbsp; Atos IT Solutions and Services &nbsp;|&nbsp; Pune, India</div>
           <div class="tl-desc">Led technical presales and solution design for enterprise clients using ServiceNow and automation platforms.</div>
           <ul class="tl-list">
             <li>Developed cost models, technical proposals and solution architectures for RFPs and enterprise transitions</li>
@@ -860,7 +851,6 @@
             <div class="tl-role">Technical Lead</div>
             <div class="tl-date">Dec 2009 – Sep 2016</div>
           </div>
-          <div class="tl-company"><i class="fa-solid fa-building"></i>&nbsp; Atos IT Solutions and Services &nbsp;|&nbsp; Pune, India</div>
           <ul class="tl-list">
             <li>Architected middleware & integration with enforced authentication, authorization and encrypted communication</li>
             <li>Implemented security controls across ServiceNow, CA SDM and Tibco middleware integrations</li>
@@ -881,7 +871,6 @@
             <div class="tl-role">Senior Software Engineer</div>
             <div class="tl-date">Jun 2006 – Nov 2009</div>
           </div>
-          <div class="tl-company"><i class="fa-solid fa-building"></i>&nbsp; Mahindra Satyam &nbsp;|&nbsp; Pune, India</div>
           <ul class="tl-list">
             <li>Developed secure applications using ASP.NET and C#.NET with emphasis on input validation and secure auth</li>
             <li>Implemented security controls for financial applications managing sensitive investor and transaction data</li>
@@ -899,7 +888,6 @@
             <div class="tl-role">Senior Software Engineer</div>
             <div class="tl-date">Sep 2004 – Jun 2006</div>
           </div>
-          <div class="tl-company"><i class="fa-solid fa-building"></i>&nbsp; IBM Global Services Ltd. &nbsp;|&nbsp; Bengaluru, India</div>
           <ul class="tl-list">
             <li>Developed Windows desktop applications using VB.NET and Visual Basic 6.0 in enterprise environments</li>
             <li>Built internal tools with attention to data integrity, access control and secure handling of business data</li>
@@ -1069,7 +1057,7 @@
         <i class="fa-solid fa-cubes"></i>
         Certified Blockchain Architect
       </div>
-      <div class="cert-card reveal" style="border-color:rgba(0,255,65,.25);color:var(--green-dim)">
+      <div class="cert-card reveal" style="border-color:rgba(0,212,255,.25);color:var(--green-dim)">
         <i class="fa-solid fa-spinner fa-spin-pulse" style="font-size:.9rem"></i>
         OffSec Certifications — In Progress
       </div>
