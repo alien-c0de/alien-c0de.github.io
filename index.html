@@ -508,10 +508,13 @@
       animation: glitch-on 8s infinite;
     }
     @keyframes glitch-on {
-      0%,90%,100% { text-shadow: 0 0 40px rgba(0,255,65,.4); }
-      91% { text-shadow: -3px 0 var(--cyan), 3px 0 var(--red); clip-path: inset(20% 0 30% 0); }
-      92% { text-shadow: 3px 0 var(--cyan), -3px 0 var(--red); }
-      93% { text-shadow: 0 0 40px rgba(0,255,65,.4); }
+      0%,88%,100% { text-shadow: 0 0 40px rgba(0,255,65,.4); opacity: 1; transform: none; }
+      89%  { opacity: 0; }
+      90%  { opacity: 1; text-shadow: -4px 0 var(--cyan), 4px 0 var(--red); transform: translateX(-3px); }
+      91%  { opacity: 0; }
+      92%  { opacity: 1; text-shadow: 4px 0 var(--cyan), -4px 0 var(--red); transform: translateX(3px); }
+      93%  { opacity: 0; }
+      94%  { opacity: 1; text-shadow: 0 0 40px rgba(0,255,65,.4); transform: none; }
     }
   </style>
 </head>
